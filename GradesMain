@@ -19,9 +19,6 @@ public class Grades {
     public String getStudentName() {
         return studentName;
     }
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
-    }
     public boolean passFail(){
         if(grade<= 65){
            return false;
