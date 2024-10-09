@@ -1,0 +1,26 @@
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class CarTest {
+    @Test
+    @DisplayName("Test for the car make")
+    public void testMake(){
+        Car car = new Car("Honda", "Accord", 2000);
+        assertEquals("Honda", car.getMake());
+
+    }
+    @Test
+    @DisplayName("Test for the car model")
+    public void testModel() {
+        Car car = new Car("Honda", "Accord", 2000);
+        assertEquals("Accord", car.getModel());
+    }
+    @Test
+    @DisplayName("Test for the car year")
+    public void testYear() {
+        Car car = new Car("Honda", "Accord", 2000);
+        assertEquals(2000, car.getYear());
+    }
+
+}
