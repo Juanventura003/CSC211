@@ -1,0 +1,33 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class GradesTest {
+    @Test
+    public void testGrades() {
+        Grades grades = new Grades(75, "Matt");
+        assertEquals(75,grades.getGrade());
+
+    }
+    @Test
+    public void testName(){
+        Grades grades = new Grades(75, "Matt");
+        assertEquals("Matt",grades.getStudentName());
+    }
+    @Test
+    public void testSetGrade(){
+        Grades grades = new Grades(75, "Matt");
+        grades.setGrade(77);
+        assertEquals(77,grades.getGrade());
+
+    }
+    @Test
+    public void testOutcome(){
+        Grades grades = new Grades(75, "Matt");
+        grades.getGrade();
+        assertEquals(true, grades.passFail());
+
+
+    }
+
+
+}
