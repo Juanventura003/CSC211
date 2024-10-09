@@ -1,0 +1,35 @@
+import java.sql.SQLOutput;
+
+public class Grades {
+    private int grade;
+    private String studentName;
+    public Grades(int grade, String studentName) {
+        this.grade = grade;
+        this.studentName = studentName;
+
+    }
+    public int getGrade() {
+        return grade;
+    }
+    public void setGrade(int grade) {
+        if(grade >= 0 && grade <= 100) {
+            this.grade = grade;
+        }
+    }
+    public String getStudentName() {
+        return studentName;
+    }
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+    public boolean passFail(){
+        if(grade<= 65){
+           return false;
+        }
+        else{
+            return true;
+        }
+        }
+    }
+
+
